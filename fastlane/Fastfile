@@ -1,0 +1,7 @@
+lane :test do
+  ENV["GOOGLE_ANALYTICS_UA"] ="aaa"
+  google_analytics(payload: {  path: '/page-path', hostname: 'mysite.com', title: 'A Page!' } )
+  google_event(payload: {  category: 'video', action: 'play', label: 'cars', value: 1 } )
+  google_exception(payload: { description: 'RuntimeException', fatal: true })
+  google_timing(payload: { category: 'runtime', variable: 'db', label: 'query', time: 50 })
+end
