@@ -1,4 +1,11 @@
-# os: osx # enable this if you need macOS support
 language: ruby
 rvm:
-  - 2.2.4
+- 2.2.4
+deploy:
+  provider: rubygems
+  api_key:
+    secure: zv9yrZ/jFrVau/xAS5MSrsfzOxmdZJoGDHaP0Ws5XchL4lPXvmhZgPsdimMmuPu0y8ilvDlbwHmABuIU/vjlmkfIzfSd6zUGR4UO01H+JN2KVGXUS/PwRHjE1C8AG+SmBElUf3qP3jXk1Tn0vMLaDqSVJggNvztBTfSQ1TePBsCEPaGIDeKFPSgppHLFJyleXlXzSmKYNktaoDh1emVgGMgvYN3fWWUzdCqjU+VHRHiocboETP52WwdbV3sFAuhJxL5CG+raj3QtXaAPV1xR1YnFGa/AJa+ThCCHGIprrYjf1bp3Z4z6HudsiAV9XjAxbYMaAMUIusZm79Pkc0E3oISN43kyyTxSF2JbgazqOIVGdxqHGL6zvQQ8Nm7+JM1mx8ilWF68B6MV8xn1j4B7hsJR9OTFaXW42PP45KUQ6Vv3TGo6X30mvLVTBfa3w2sJISjz4O6ducbdhfX2cmeJhhgr1zBTYSO8mAXTSSPl0i2rQnS2Ba5bFQuzbAY4dCCqfzi2b+AAZvVCEeFQR8ea6HE0NcwCXYuNLYwWQI/tpX2w1m6AXfFhqE2nQ+W9YfkojQEdeGTAWpY3UIcocp8U4wSkEhD/FrKaduoZuJ1Z/l53xknk4x193T4kw8ROjRDDYO5gxAea61ChGOlmCw2BnokhnPX7a1QoKVdtbEi/PO8=
+  gem: fastlane-plugin-google_analytics
+  on:
+    branch: master
+    repo: hjanuschka/fastlane-plugin-google_analytics
