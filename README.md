@@ -18,9 +18,25 @@ Use Google Analytics
 
 ## Example
 
-Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
+### Pageview
+```ruby
+google_analytics(payload: {  path: '/page-path', hostname: 'mysite.com', title: 'A Page!' } )
+```
 
-**Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)
+### Exception
+```ruby
+google_exception(payload: { description: 'RuntimeException', fatal: true })
+```
+
+### Timing
+```ruby
+google_timing(payload: { category: 'runtime', variable: 'db', label: 'query', time: 50 })
+```
+
+### Event
+```ruby
+google_event(payload: { category: 'video', action: 'play', label: 'cars', value: 1 })
+```
 
 
 ## Issues and Feedback
