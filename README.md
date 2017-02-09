@@ -10,11 +10,11 @@ This project is a [fastlane](https://github.com/fastlane/fastlane) plugin. To ge
 fastlane add_plugin google_analytics
 ```
 
-## About google_analytics
+## About
 
-Fire universal Analytics
+Use Google Analytics
 
-**Note to author:** Add a more detailed description about this plugin here. If your plugin contains multiple actions, make sure to mention them here.
+<img src='assets/screenshot.png'>
 
 ## Example
 
@@ -22,30 +22,10 @@ Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plu
 
 **Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)
 
-## Run tests for this plugin
-
-To run both the tests, and code style validation, run
-
-```
-rake
-```
-
-To automatically fix many of the styling issues, use
-```
-rubocop -a
-```
 
 ## Issues and Feedback
 
 For any other issues and feedback about this plugin, please submit it to this repository.
-
-## Troubleshooting
-
-If you have trouble using plugins, check out the [Plugins Troubleshooting](https://docs.fastlane.tools/plugins/plugins-troubleshooting/) guide.
-
-## Using `fastlane` Plugins
-
-For more information about how the `fastlane` plugin system works, check out the [Plugins documentation](https://docs.fastlane.tools/plugins/create-plugin/).
 
 ## About `fastlane`
 
