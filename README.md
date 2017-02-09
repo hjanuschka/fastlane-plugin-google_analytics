@@ -14,7 +14,7 @@ fastlane add_plugin google_analytics
 
 Use Google Analytics
 
-<img src='assets/screenshot.png'>
+<img src='assets/screen.png'>
 
 ## Example
 
